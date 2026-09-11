@@ -33,7 +33,7 @@ const annees = {
     { nom: "Emmanuelle Mellinand-Richier", photo: emmanuelle, texte: "En B2, j'ai pu découvrir le développement web dans de bonnes conditions, avec un encadrement patient et des projets adaptés à notre progression." },
     { nom: "Anne-Gaelle Bernard", photo: annegaelle, texte: "L'Atelier offre un cadre idéal pour apprendre en pratiquant, avec une équipe toujours prête à partager son expérience et ses conseils." },
     { nom: "Kheira Lakhezoum", photo: kheira, texte: "Le support IT à l'Atelier, c'est avant tout une aventure humaine : accompagner chacun au quotidien dans un environnement dynamique et bienveillant." },
-    { nom: "Yanis Bennadji", photo: yanis, texte: "En tant qu'élève de M1, l'Atelier m'a permis de mettre en pratique mes connaissances sur des projets réels, dans une ambiance stimulante et collaborative." },
+    { nom: "Yanis Bennadji", photo: yanis, texte: "L'Atelier m'a permis de mettre en pratique mes connaissances sur des projets réels, dans une ambiance stimulante et collaborative." },
     { nom: "Konstantine Garozashvili", photo: konstantine, texte: "L'Atelier propose un vrai suivi technique et humain, qui permet de progresser rapidement tout en gardant du plaisir à développer." },
     { nom: "Abd-ellah Hiun", photo: abdellah, texte: "Une équipe accueillante et des projets concrets qui donnent tout leur sens à l'apprentissage. Je suis ravi de faire partie de cette aventure." },
     { nom: "Arthur Descourvieres", photo: arthur, texte: "L'Atelier m'a donné l'opportunité de développer mes compétences techniques tout en travaillant sur des projets qui ont un vrai impact." },
