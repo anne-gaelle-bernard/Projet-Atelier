@@ -1,29 +1,30 @@
-import { useState } from 'react'
-import julien from '../assets/Julien.png'
-import jerome from '../assets/jerome.png'
-import ana from '../assets/Ana.png'
-import fatima from '../assets/FATIMA.png'
-import amine from '../assets/Amine.png'
-import thomas from '../assets/thomas.png'
-import alex from '../assets/alex.png'
-import jb from '../assets/JB.png'
-import rabaou from '../assets/rabaou.png'
-import johan from '../assets/johan.png'
-import morad from '../assets/Morad.png'
-import kamelia from '../assets/kamelia.png'
-import abakar from '../assets/Ali.png'
-import guillaume from '../assets/guillaume.png'
-import oussema from '../assets/Oussama.png'
-import oroitz from '../assets/Oroitz.png'
-import emmanuelle from '../assets/Emmanuelle.png'
-import annegaelle from '../assets/Anne-gaelle.png'
-import kheira from '../assets/Kiara.png'
-import yanis from '../assets/yanis.png'
-import konstantine from '../assets/konstantine.png'
-import abdellah from '../assets/Abdhellah.png'
-import arthur from '../assets/Arthur.png'
+// Témoignages par année scolaire, de la plus récente à la plus ancienne.
+// Pour ajouter une année : ajouter une clé en tête de l'objet, les onglets se mettent à jour automatiquement.
+import julien from '../assets/photos/Julien.png'
+import jerome from '../assets/photos/jerome.png'
+import ana from '../assets/photos/Ana.png'
+import fatima from '../assets/photos/FATIMA.png'
+import amine from '../assets/photos/Amine.png'
+import thomas from '../assets/photos/thomas.png'
+import alex from '../assets/photos/alex.png'
+import jb from '../assets/photos/JB.png'
+import rabaou from '../assets/photos/rabaou.png'
+import johan from '../assets/photos/johan.png'
+import morad from '../assets/photos/Morad.png'
+import kamelia from '../assets/photos/kamelia.png'
+import abakar from '../assets/photos/Ali.png'
+import guillaume from '../assets/photos/guillaume.png'
+import oussema from '../assets/photos/Oussama.png'
+import oroitz from '../assets/photos/Oroitz.png'
+import emmanuelle from '../assets/photos/Emmanuelle.png'
+import annegaelle from '../assets/photos/Anne-gaelle.png'
+import kheira from '../assets/photos/Kiara.png'
+import yanis from '../assets/photos/yanis.png'
+import konstantine from '../assets/photos/konstantine.png'
+import abdellah from '../assets/photos/Abdhellah.png'
+import arthur from '../assets/photos/Arthur.png'
 
-const annees = {
+export const testimonialsByYear = {
   "2025-2026": [
     { nom: "Kamelia Mohamdi", photo: kamelia, texte: "Arriver à l'Atelier m'a permis de vraiment prendre confiance en mes compétences. J'apprécie particulièrement la liberté qu'on nous laisse pour proposer nos idées sur les projets, tout en sachant qu'on peut toujours compter sur l'équipe en cas de besoin." },
     { nom: "Abakar Issa Ali", photo: abakar, texte: "L'ambiance de travail est excellente et les projets sont stimulants. J'apprends énormément aux côtés d'une équipe bienveillante et passionnée." },
@@ -67,60 +68,4 @@ const annees = {
     { nom: "Thibault Pattieu", photo: null, texte: "Une année riche en enseignement auprès de collaborateurs passionnants et enthousiastes. L'Atelier a démontré que le concept commercial était bon et le concept social encore meilleur avec de beaux progrès de tous nos alternant·es." },
     { nom: "Louise Décombe", photo: null, texte: "Ma participation à l'Atelier en tant qu'intervenante externe a été extrêmement enrichissante : j'ai autant appris des alternants que j'ai pu répondre à leurs questions. Le point fort de cette équipe c'est la qualité de sa communication et sa mise en application des principes agiles !" },
   ],
-}
-
-export default function Testimonial() {
-  const [annee, setAnnee] = useState("2025-2026")
-
-  const personnes = annees[annee]
-
-  return (
-    <section>
-      <h2 className="section-title">Témoignages</h2>
-      <p className="section-subtitle">Ce que nos membres disent de l'Atelier</p>
-
-      <div className="testimonials-header">
-        <div className="annee-tabs">
-          <button
-            className={annee === "2025-2026" ? "badge-annee active" : "badge-annee"}
-            onClick={() => setAnnee("2025-2026")}
-          >
-            2025 – 2026
-          </button>
-          <button
-            className={annee === "2023-2024" ? "badge-annee active" : "badge-annee"}
-            onClick={() => setAnnee("2023-2024")}
-          >
-            2023 – 2024
-          </button>
-          <button
-            className={annee === "2022-2023" ? "badge-annee active" : "badge-annee"}
-            onClick={() => setAnnee("2022-2023")}
-          >
-            2022 – 2023
-          </button>
-        </div>
-        <span className="members-count">{personnes.length} membres</span>
-      </div>
-
-      <div className="cards">
-        {personnes.map((p) => (
-          <div className="card" key={p.nom}>
-            <div className="card-header">
-              {p.photo ? (
-                <img src={p.photo} alt={p.nom} />
-              ) : (
-                <div className="avatar-placeholder">{p.nom.charAt(0)}</div>
-              )}
-              <strong>{p.nom}</strong>
-            </div>
-            <div className="card-body">
-              <div className="quote-mark">"</div>
-              <p className="card-text">{p.texte}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
-  )
 }

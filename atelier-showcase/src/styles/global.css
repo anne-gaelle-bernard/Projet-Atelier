@@ -1,0 +1,63 @@
+/* Charte inspirée de laplateforme.io */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  background-color: #f6f7fa;
+  color: #202124;
+  -webkit-font-smoothing: antialiased;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 20px 90px;
+}
+
+.section-title {
+  font-family: "Rubik", Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #202124;
+  margin-bottom: 6px;
+}
+
+.section-subtitle {
+  color: #5f6368;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+/* Bouton rouge-orangé de La Plateforme */
+.btn {
+  display: inline-block;
+  background-color: #e74a34;
+  color: white;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 3px;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #c93a26;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #0062ff;
+  outline-offset: 2px;
+}
