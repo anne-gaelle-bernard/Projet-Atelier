@@ -1,23 +1,13 @@
 import logo from '../assets/logos/laplateforme.png'
 import atelierLogo from '../assets/logos/atelier.png'
-import { testimonialsByYear } from '../data/testimonials'
 import './Hero.css'
 
-const years = Object.keys(testimonialsByYear)
-const everyone = Object.values(testimonialsByYear).flat()
-
-const stats = [
-  { value: years.length, label: "promotions" },
-  { value: everyone.length, label: "témoignages" },
-  { value: years[years.length - 1].slice(0, 4), label: "année de création" },
-]
-
-export default function Hero() {
+function Hero() {
   return (
-    <>
+    <div>
       <nav className="navbar">
         <div className="navbar-inner">
-          <a href="https://laplateforme.io/" target="_blank" rel="noreferrer">
+          <a href="https://laplateforme.io/" target="_blank">
             <img className="navbar-logo" src={logo} alt="La Plateforme" />
           </a>
           <div className="navbar-links">
@@ -39,15 +29,23 @@ export default function Hero() {
           <a className="btn" href="#temoignages">Lire les témoignages</a>
         </div>
 
-        <ul className="hero-stats">
-          {stats.map((s) => (
-            <li key={s.label}>
-              <strong>{s.value}</strong>
-              <span>{s.label}</span>
-            </li>
-          ))}
-        </ul>
+        <div className="hero-stats">
+          <div className="stat">
+            <strong>3</strong>
+            <span>promotions</span>
+          </div>
+          <div className="stat">
+            <strong>37</strong>
+            <span>témoignages</span>
+          </div>
+          <div className="stat">
+            <strong>2019</strong>
+            <span>année de création</span>
+          </div>
+        </div>
       </header>
-    </>
+    </div>
   )
 }
+
+export default Hero

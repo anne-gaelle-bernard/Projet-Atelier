@@ -15,11 +15,10 @@ npm run dev
 src/
 ├── main.jsx              # point d'entrée, importe les styles globaux
 ├── App.jsx               # assemble les sections de la page
-├── components/           # un composant = un .jsx (+ son .css)
+├── components/
 │   ├── Hero.jsx / Hero.css
 │   ├── Testimonials.jsx / Testimonials.css
-│   ├── TestimonialCard.jsx
-│   └── YearTabs.jsx
+│   └── Footer.jsx / Footer.css
 ├── data/
 │   └── testimonials.js   # contenu des témoignages, par année
 ├── assets/
@@ -33,4 +32,4 @@ src/
 
 1. Déposer la photo dans `src/assets/photos/`.
 2. L'importer en haut de `src/data/testimonials.js` et ajouter l'entrée dans l'année voulue.
-3. Pour une nouvelle année, ajouter une clé en tête de l'objet : l'onglet apparaît automatiquement.
+3. Pour une nouvelle année, ajouter la liste dans `src/data/testimonials.js` et un bouton dans `Testimonials.jsx`.

@@ -1,5 +1,4 @@
-// Témoignages par année scolaire, de la plus récente à la plus ancienne.
-// Pour ajouter une année : ajouter une clé en tête de l'objet, les onglets se mettent à jour automatiquement.
+
 import julien from '../assets/photos/Julien.png'
 import jerome from '../assets/photos/jerome.png'
 import ana from '../assets/photos/Ana.png'
@@ -24,7 +23,7 @@ import konstantine from '../assets/photos/konstantine.png'
 import abdellah from '../assets/photos/Abdhellah.png'
 import arthur from '../assets/photos/Arthur.png'
 
-export const testimonialsByYear = {
+const temoignages = {
   "2025-2026": [
     { nom: "Kamelia Mohamdi", photo: kamelia, texte: "Arriver à l'Atelier m'a permis de vraiment prendre confiance en mes compétences. J'apprécie particulièrement la liberté qu'on nous laisse pour proposer nos idées sur les projets, tout en sachant qu'on peut toujours compter sur l'équipe en cas de besoin." },
     { nom: "Abakar Issa Ali", photo: abakar, texte: "L'ambiance de travail est excellente et les projets sont stimulants. J'apprends énormément aux côtés d'une équipe bienveillante et passionnée." },
@@ -69,3 +68,5 @@ export const testimonialsByYear = {
     { nom: "Louise Décombe", photo: null, texte: "Ma participation à l'Atelier en tant qu'intervenante externe a été extrêmement enrichissante : j'ai autant appris des alternants que j'ai pu répondre à leurs questions. Le point fort de cette équipe c'est la qualité de sa communication et sa mise en application des principes agiles !" },
   ],
 }
+
+export default temoignages
