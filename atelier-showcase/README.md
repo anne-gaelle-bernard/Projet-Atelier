@@ -16,7 +16,9 @@ src/
 ├── main.jsx              # point d'entrée, importe les styles globaux
 ├── App.jsx               # assemble les sections de la page
 ├── components/
+│   ├── Navbar.jsx / Navbar.css
 │   ├── Hero.jsx / Hero.css
+│   ├── Valeurs.jsx / Valeurs.css
 │   ├── Testimonials.jsx / Testimonials.css
 │   └── Footer.jsx / Footer.css
 ├── data/

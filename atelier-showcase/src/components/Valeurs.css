@@ -1,0 +1,82 @@
+/* fond blanc sur toute la largeur */
+.valeurs-fond {
+  background-color: white;
+}
+
+.valeurs-contenu {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.raison,
+.valeurs {
+  flex: 1;
+}
+
+/* sous-titres en rouge */
+.valeurs-sous-titre {
+  font-family: "Rubik", Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: #e74a34;
+  margin-bottom: 20px;
+}
+
+/* bloc bleu de la raison d'être */
+.raison-texte {
+  background-color: #0062ff;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  padding: 32px;
+  border-radius: 4px;
+}
+
+/* les 4 valeurs */
+.valeurs-liste {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.valeur {
+  background-color: #f6f7fa;
+  border-left: 4px solid #0062ff;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.valeur-numero {
+  font-family: "Rubik", Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: #0062ff;
+}
+
+.valeur p {
+  font-family: "Rubik", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: #202124;
+  margin-top: 6px;
+}
+
+/* mobile */
+@media (max-width: 900px) {
+  .valeurs-contenu {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .valeurs-liste {
+    grid-template-columns: 1fr;
+  }
+
+  .raison-texte {
+    font-size: 17px;
+    padding: 24px;
+  }
+}

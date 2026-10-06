@@ -10,25 +10,47 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   gap: 24px;
 }
 
-/* logo en blanc */
 .footer-logo {
-  height: 36px;
-  filter: grayscale(1) invert(1) brightness(1.6);
-  mix-blend-mode: screen;
-  margin-bottom: 10px;
+  height: 32px;
+  border-radius: 4px;
+  margin-bottom: 12px;
 }
 
 .footer-tagline {
   font-size: 14px;
 }
 
+/* liens du footer */
+.footer-liens {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-liens a {
+  color: #bdc1c6;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-liens a:hover {
+  color: white;
+}
+
 .footer-bottom {
-  background-color: #000000;
+  background-color: black;
   padding: 16px 20px;
   font-size: 13px;
   text-align: center;
+}
+
+/* téléphone */
+@media (max-width: 600px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

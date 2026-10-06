@@ -9,24 +9,24 @@ html {
 }
 
 body {
-  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #f6f7fa;
   color: #202124;
-  -webkit-font-smoothing: antialiased;
 }
 
 section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 70px 20px 90px;
+  /* pour que le menu fixe ne cache pas le titre */
+  scroll-margin-top: 60px;
 }
 
 .section-title {
-  font-family: "Rubik", Helvetica, Arial, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 36px;
   font-weight: 900;
   text-transform: uppercase;
-  color: #202124;
   margin-bottom: 6px;
 }
 
@@ -41,22 +41,14 @@ section {
   display: inline-block;
   background-color: #e74a34;
   color: white;
-  font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
   padding: 12px 22px;
   border-radius: 3px;
-  transition: background-color 0.2s;
 }
 
 .btn:hover {
   background-color: #c93a26;
-}
-
-button:focus-visible,
-a:focus-visible {
-  outline: 2px solid #0062ff;
-  outline-offset: 2px;
 }
