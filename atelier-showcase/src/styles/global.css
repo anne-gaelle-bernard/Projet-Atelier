@@ -1,4 +1,3 @@
-/* Charte inspirée de laplateforme.io */
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +36,7 @@ section {
   margin-bottom: 30px;
 }
 
-/* Bouton rouge-orangé de La Plateforme */
+/* bouton rouge */
 .btn {
   display: inline-block;
   background-color: #e74a34;

@@ -1,15 +1,11 @@
 import { useState } from 'react'
-import { testimonialsByYear } from '../data/testimonials'
-import YearTabs from './YearTabs'
-import TestimonialCard from './TestimonialCard'
+import temoignages from '../data/testimonials'
 import './Testimonials.css'
 
-const years = Object.keys(testimonialsByYear)
+function Testimonials() {
+  const [annee, setAnnee] = useState("2025-2026")
 
-export default function Testimonials() {
-  const [annee, setAnnee] = useState(years[0])
-
-  const personnes = testimonialsByYear[annee]
+  const personnes = temoignages[annee]
 
   return (
     <section id="temoignages">
@@ -17,15 +13,47 @@ export default function Testimonials() {
       <p className="section-subtitle">Ce que nos membres disent de l'Atelier</p>
 
       <div className="testimonials-header">
-        <YearTabs years={years} selected={annee} onSelect={setAnnee} />
+        <div className="annee-tabs">
+          <button
+            className={annee === "2025-2026" ? "badge-annee active" : "badge-annee"}
+            onClick={() => setAnnee("2025-2026")}
+          >
+            2025 – 2026
+          </button>
+          <button
+            className={annee === "2023-2024" ? "badge-annee active" : "badge-annee"}
+            onClick={() => setAnnee("2023-2024")}
+          >
+            2023 – 2024
+          </button>
+          <button
+            className={annee === "2022-2023" ? "badge-annee active" : "badge-annee"}
+            onClick={() => setAnnee("2022-2023")}
+          >
+            2022 – 2023
+          </button>
+        </div>
         <span className="members-count">{personnes.length} membres</span>
       </div>
 
       <div className="cards">
-        {personnes.map((p) => (
-          <TestimonialCard key={p.nom} {...p} />
+        {personnes.map((personne) => (
+          <div className="card" key={personne.nom}>
+            <p className="card-text">{personne.texte}</p>
+
+            <div className="card-author">
+              {personne.photo ? (
+                <img className="avatar" src={personne.photo} alt={personne.nom} />
+              ) : (
+                <div className="avatar avatar-placeholder">{personne.nom.charAt(0)}</div>
+              )}
+              <h3 className="card-name">{personne.nom}</h3>
+            </div>
+          </div>
         ))}
       </div>
     </section>
   )
 }
+
+export default Testimonials

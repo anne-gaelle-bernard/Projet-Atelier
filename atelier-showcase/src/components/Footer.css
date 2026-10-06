@@ -14,7 +14,7 @@
   gap: 24px;
 }
 
-/* Logo passé en blanc (le fond blanc du PNG devient noir puis disparaît avec "screen") */
+/* logo en blanc */
 .footer-logo {
   height: 36px;
   filter: grayscale(1) invert(1) brightness(1.6);
