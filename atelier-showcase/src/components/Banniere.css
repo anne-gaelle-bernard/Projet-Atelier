@@ -1,17 +1,17 @@
 /* partie bleue en haut */
-.hero {
+.banniere {
   background-color: #0062ff;
   color: white;
   text-align: center;
 }
 
-.hero-content {
+.banniere-content {
   max-width: 900px;
   margin: 0 auto;
   padding: 80px 20px 60px;
 }
 
-.hero-kicker {
+.banniere-laplateforme {
   display: inline-block;
   background-color: white;
   color: #0062ff;
@@ -23,7 +23,7 @@
   margin-bottom: 28px;
 }
 
-.hero-title {
+.banniere-title {
   font-family: "Rubik", sans-serif;
   font-size: 68px;
   font-weight: 900;
@@ -31,20 +31,19 @@
   margin-bottom: 24px;
 }
 
-.hero-title span {
+.banniere-title span {
   display: block;
   color: #b3ceff;
 }
 
-.hero-text {
+.banniere-text {
   max-width: 600px;
   margin: 0 auto 36px;
   font-size: 20px;
   font-weight: 600;
 }
 
-/* les chiffres */
-.hero-stats {
+.banniere-stats {
   display: flex;
   justify-content: center;
   gap: 80px;
@@ -70,15 +69,15 @@
 
 /* tablette */
 @media (max-width: 900px) {
-  .hero-title {
+  .banniere-title {
     font-size: 40px;
   }
 
-  .hero-text {
+  .banniere-text {
     font-size: 17px;
   }
 
-  .hero-stats {
+  .banniere-stats {
     gap: 30px;
   }
 
@@ -89,7 +88,7 @@
 
 /* téléphone */
 @media (max-width: 600px) {
-  .hero-stats {
+  .banniere-stats {
     flex-direction: column;
   }
 }

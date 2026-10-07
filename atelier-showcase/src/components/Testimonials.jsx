@@ -1,8 +1,7 @@
 import { useState } from 'react'
-import temoignages from '../data/testimonials'
+import temoignages from '../testimonies/testimonials'
 import './Testimonials.css'
 
-// un témoignage : si le texte est long, on affiche le début + un bouton "Lire la suite"
 function Temoignage({ personne }) {
   const [ouvert, setOuvert] = useState(false)
 
@@ -52,19 +51,19 @@ function Testimonials() {
             className={annee === "2025-2026" ? "badge-annee active" : "badge-annee"}
             onClick={() => setAnnee("2025-2026")}
           >
-            2025 – 2026
+            2025 - 2026
           </button>
           <button
             className={annee === "2023-2024" ? "badge-annee active" : "badge-annee"}
             onClick={() => setAnnee("2023-2024")}
           >
-            2023 – 2024
+            2023 - 2024
           </button>
           <button
             className={annee === "2022-2023" ? "badge-annee active" : "badge-annee"}
             onClick={() => setAnnee("2022-2023")}
           >
-            2022 – 2023
+            2022 - 2023
           </button>
         </div>
         <span className="members-count">{personnes.length} membres</span>

@@ -19,9 +19,11 @@ import emmanuelle from '../assets/photos/Emmanuelle.png'
 import annegaelle from '../assets/photos/Anne-gaelle.png'
 import kheira from '../assets/photos/Kiara.png'
 import yanis from '../assets/photos/yanis.png'
-import konstantine from '../assets/photos/konstantine.png'
+import konstantine from '../assets/photos/konstantine.webp'
 import abdellah from '../assets/photos/Abdhellah.png'
 import arthur from '../assets/photos/Arthur.png'
+import thomas2025 from '../assets/photos/thomas-2025.png'
+import leadDev2025 from '../assets/photos/lead-dev-2025.png'
 
 const temoignages = {
   "2025-2026": [
@@ -30,13 +32,15 @@ const temoignages = {
     { nom: "Guillaume Bomben", photo: guillaume, texte: "Une belle découverte du monde professionnel. Chaque projet est l'occasion d'apprendre de nouvelles technologies et de progresser en autonomie." },
     { nom: "Oussema Fatnassi", photo: oussema, texte: "L'Atelier m'a permis de monter rapidement en compétences grâce à un accompagnement de qualité et des projets variés et enrichissants." },
     { nom: "Oroitz Lago Ramos", photo: oroitz, texte: "Une expérience très formatrice, portée par une équipe soudée et exigeante qui pousse à toujours donner le meilleur de soi-même." },
-    { nom: "Emmanuelle Mellinand-Richier", photo: emmanuelle, texte: "En B2, j'ai pu découvrir le développement web dans de bonnes conditions, avec un encadrement patient et des projets adaptés à notre progression." },
+    { nom: "Emmanuelle Mellinand-Richier", photo: emmanuelle, texte: "Depuis mon arrivée à l’Atelier en tant qu’alternante en octobre 2025, j’ai eu l’opportunité de m’épanouir dans un environnement de travail particulièrement agréable. Cette expérience m’a permis de découvrir une méthodologie de travail adaptée et enrichissante, tout en tissant des liens solides avec mes collègues. L’Atelier m’a également donné l’occasion de contribuer à des projets aussi passionnants qu’impactants. Je pense notamment au développement de la nouvelle version de l’application Safer, dont l’objectif est de lutter contre les violences sexistes et sexuelles en milieu festivalier. Je suis très reconnaissante envers toute l’équipe de l’Atelier pour la confiance qu’elle m’a accordée. Cette aventure a été extrêmement formatrice, et j’ai hâte de découvrir ce que la suite me réserve !" },
     { nom: "Anne-Gaelle Bernard", photo: annegaelle, texte: "L'Atelier offre un cadre idéal pour apprendre en pratiquant, avec une équipe toujours prête à partager son expérience et ses conseils." },
     { nom: "Kheira Lakhezoum", photo: kheira, texte: "Le support IT à l'Atelier, c'est avant tout une aventure humaine : accompagner chacun au quotidien dans un environnement dynamique et bienveillant." },
     { nom: "Yanis Bennadji", photo: yanis, texte: "L'Atelier m'a permis de mettre en pratique mes connaissances sur des projets réels, dans une ambiance stimulante et collaborative." },
     { nom: "Konstantine Garozashvili", photo: konstantine, texte: "L'Atelier propose un vrai suivi technique et humain, qui permet de progresser rapidement tout en gardant du plaisir à développer." },
     { nom: "Abd-ellah Hiun", photo: abdellah, texte: "Une équipe accueillante et des projets concrets qui donnent tout leur sens à l'apprentissage. Je suis ravi de faire partie de cette aventure." },
     { nom: "Arthur Descourvieres", photo: arthur, texte: "L'Atelier m'a donné l'opportunité de développer mes compétences techniques tout en travaillant sur des projets qui ont un vrai impact." },
+    { nom: "Thomas Spinec", photo: thomas2025, texte: "J'ai rejoint L'Atelier en alternance il y a deux ans, et aujourd'hui j'y suis en CDI, et honnêtement, je ne pouvais pas rêver mieux. Ce qui m'a tout de suite frappé, c'est l'ambiance : une équipe bienveillante, où on travaille sérieusement tout en gardant une vraie bonne humeur au quotidien. On se sent à l'aise, et ça change tout. Côté progression, je me souviens qu'au début je validais la moindre petite tâche avec ma lead dev. Et puis, sans vraiment m'en rendre compte, je me suis retrouvé à mener des projets en autonomie. C'est quelque chose dont je suis vraiment fier. Le moment qui restera gravé : l'accompagnement des CDPI à Cannes. Je ne me voyais pas du tout dans le rôle du \"prof\"… et pourtant ça s'est super bien passé. Ce genre de défi, c'est exactement ce qui fait grandir." },
+    { nom: "À compléter", photo: leadDev2025, texte: "Lead Dev à L'Atelier, j'accompagne depuis 2 ans les alternants en tant que tech lead sur leurs projets. C'est un rôle qui me tient particulièrement à cœur : au-delà de l'aspect technique, c'est avant tout une aventure humaine faite d'échanges réguliers, de questions, de moments où on avance ensemble sur un projet qui prend forme petit à petit. Ce que j'apprécie aussi beaucoup chez L'Atelier, c'est la variété des projets sur lesquels on peut intervenir, aussi bien en mobile qu'en web : ça permet de se confronter à des problématiques différentes et de ne jamais s'ennuyer. J'aime cette dynamique où je transmets mon expérience tout en étant moi-même challengée par le regard neuf et la curiosité des alternants. Voir leur progression, les accompagner dans leurs doutes comme dans leurs réussites, c'est vraiment gratifiant. C'est une expérience unique que je recommande à tous ceux qui aiment autant partager que continuer à apprendre." },
   ],
   "2023-2024": [
     { nom: "Julien Athomas", photo: julien, texte: "Nous avons passé une année très riche, au cours de laquelle nous avons pu construire nos process et affirmer l'identité de l'atelier. Nous avons développé de nombreux projets variés qui nous ont permis de tirer de précieuses leçons sur nos méthodes, nos outils, et notre manière de chiffrer les projets. Nous avons également adapté nos méthodes de travail pour améliorer les échanges avec nos alternants et nos clients. Je tiens à remercier toute l'équipe de l'atelier !" },

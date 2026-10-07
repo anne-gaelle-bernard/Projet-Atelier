@@ -17,7 +17,7 @@ src/
 ├── App.jsx               # assemble les sections de la page
 ├── components/
 │   ├── Navbar.jsx / Navbar.css
-│   ├── Hero.jsx / Hero.css
+│   ├── Banniere.jsx / Banniere.css
 │   ├── Valeurs.jsx / Valeurs.css
 │   ├── Testimonials.jsx / Testimonials.css
 │   └── Footer.jsx / Footer.css

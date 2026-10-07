@@ -1,4 +1,4 @@
-/* menu (reste en haut quand on descend) */
+
 .navbar {
   position: sticky;
   top: 0;
@@ -45,7 +45,6 @@
   border-radius: 4px;
 }
 
-/* téléphone */
 @media (max-width: 600px) {
   .navbar-atelier {
     display: none;
